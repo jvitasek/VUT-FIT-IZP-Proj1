@@ -1,8 +1,8 @@
 /**
- * @file proj1.c
- * @author Jakub Vitasek <me@jvitasek.cz>
- * @date 22.10.2013
- * @brief 1BIT Project 1: Counting Words
+ * @file 	proj1.c
+ * @author 	Jakub Vitasek <me@jvitasek.cz>
+ * @date 	22.10.2013
+ * @brief 	1BIT Project 1: Counting Words
  * 
  * In a nutshell, the program counts words containing a user-specified character
  * and prints the number. The user can utilize multiple modifiers to alter the
