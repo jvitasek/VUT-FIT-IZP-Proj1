@@ -86,38 +86,38 @@ int arg_type_and_output(int argc, char *argv[])
 	 
 	/* Printing the number of words of a specified minimal length. */
 	else if((strcmp(argv[1], ".") == 0) && ((data_type(argc, argv, ARGV_2)) == 1) && (argc >= 3))
-	printf("%d\n", minimal_length(c, argv, i, dbg, inside));
+		printf("%d\n", minimal_length(c, argv, i, dbg, inside));
 	 
 	/* Printing the number of words containing a capital letter. */
 	else if(((strcmp(argv[1], "^") == 0) && (argc == 2)) || ((strcmp(argv[1], "^") == 0) && (argc == 3) && !((data_type(argc, argv, ARGV_2)) == 1)))
-	printf("%d\n", capital(c, i, dbg, inside));
+		printf("%d\n", capital(c, i, dbg, inside));
 	 
 	/* Printing the number of words containing a capital letter at a specified position in the word. */
 	else if((strcmp(argv[1], "^") == 0) && (data_type(argc, argv, ARGV_2) == 1) && (argc >= 3))
-	printf("%d\n", capital_n(c, argv, i, position, dbg, inside));
+		printf("%d\n", capital_n(c, argv, i, position, dbg, inside));
 	 
 	/* Printing the number of words containg any number. */
 	else if(((strcmp(argv[1], ":") == 0) && (argc == 2)) || ((strcmp(argv[1], ":") == 0) && (argc == 3) && !((data_type(argc, argv, ARGV_2)) == 1)))
-	printf("%d\n", number(c, i, dbg, inside));
+		printf("%d\n", number(c, i, dbg, inside));
 	 
 	/* Printing the number of words containg any number at a specified position in the word. */
 	else if((strcmp(argv[1], ":") == 0) && (data_type(argc, argv, ARGV_2) == 1) && (argc >= 3))
-	printf("%d\n", number_n(c, argv, i, position, dbg, inside));
+		printf("%d\n", number_n(c, argv, i, position, dbg, inside));
 	 
 	/* Printing the number of words containing a specified character. */
 	else if((((data_type(argc, argv, ARGV_1) == 3 || data_type(argc, argv, ARGV_1) == 1)) && (argc == 2)) || ((argc == 3) && !((data_type(argc, argv, ARGV_2)) == 1)))
-	printf("%d\n", character(c, argv, i, dbg, inside));
+		printf("%d\n", character(c, argv, i, dbg, inside));
 	 
 	/* Printing the number of words containing a specified character at a given position in the word. */
 	else if((data_type(argc, argv, ARGV_1) == 3 || data_type(argc, argv, ARGV_1) == 1) && (argc >= 3) && (data_type(argc, argv, ARGV_2) == 1))
-	printf("%d\n", character_n(c, argv, i, position, dbg, inside));
+		printf("%d\n", character_n(c, argv, i, position, dbg, inside));
 	 
 	else
-	printf("Wrong combination of arguments. If you need help, type \"--help\"\n");
- 
-        return 0;
+		printf("Wrong combination of arguments. If you need help, type \"--help\"\n");
+
+	return 0;
 }
- 
+
 /* Prints the help message. */
 void print_help()
 {
